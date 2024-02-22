@@ -1,0 +1,10 @@
+import pandas as pd
+df=pd.read_excel("Gasolina.xlsx")
+print(df)
+
+print(df ["Modelo" ] .mean())
+print (df["Tamaño (L)"].max())
+print(df["Potencia (HP)"].min())
+print(df["Submarca"]. describe ())
+print (df [df ["R. Ciudad (km/l)"]>20])
+print (df [df ["Cilindros"]>=3])
